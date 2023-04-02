@@ -1,3 +1,7 @@
+package ejercicio1;
+// Lo de arriba debe coincidir con la paquetería de la carpeta
+
+// Debe coincidir con el nombre del archivo
 public class CadenaCaracteres {
     
     // Privamos el atributo cadena para que no sea alterado
@@ -62,13 +66,5 @@ public class CadenaCaracteres {
         return cantidad;
     }
     
-    public static void main(String[] args) {
-        CadenaCaracteres cadena = new CadenaCaracteres("hola mundo");
-        System.out.println("Primera mitad: " + cadena.obtenerPrimeraMitad());
-        System.out.println("En mayuscula: " + cadena.obtenerEnMayuscula());
-        System.out.println("Ultimo caracter: " + cadena.obtenerUltimoCaracter());
-        System.out.println("En forma inversa: " + cadena.obtenerEnFormaInversa());
-        System.out.println("Separado por guion: " + cadena.obtenerSeparadoPorGuion());
-        System.out.println("Cantidad de vocales: " + cadena.obtenerCantidadDeVocales());
-    }
+    
 }
