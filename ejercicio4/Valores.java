@@ -1,3 +1,4 @@
+package ejercicio4;
 // Declaramos la clase
 public class Valores{
     // Declaramos los atributos

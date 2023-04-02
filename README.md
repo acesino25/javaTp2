@@ -20,12 +20,12 @@ Isósceles: al menos dos de sus lados son iguales.
 Equilátero: los tres lados son iguales.
 
 
-3) Ejercicio 3
+3) Ejercicio 3  ✅✔
 Codifique un programa que defina dos valores constantes que representan la edad
 mínima y la edad máxima para poder votar. Luego verifique que dada una persona
 se indique si la edad de la misma lo habilita para votar. Muestre por pantalla si el
 mensaje “Votante habilitado” o “Votante inhabilitado en cada caso.
-4) Ejercicio 4
+4) Ejercicio 4  ✅✔
 Escribir un programa en el cual se debe definir un array de enteros de 10 posiciones, inicializarlo con números enteros, luego definir métodos para que obtenga la
 suma y la cantidad de los elementos pares, la suma y la cantidad de los elementos
 impares, el valor máximo de los elementos pares y el valor mínimo de los elementos impares. Mostrar los resultados obtenidos por pantalla.
@@ -37,7 +37,7 @@ Año: 2023
 Página 4
 
 
-5) Ejercicio 5
+5) Ejercicio 5  ✅✔
 Codifique una clase que tenga atributos que representen el título de una película,
 su género, duración, calificación de acuerdo a la edad (ATP (Aptas para Todo Público), PM13 (mayores de trece años), PM16 (mayores de dieciséis) y PM18 (sólo
 para adultos), y director todos los atributos deben ser privados. Defina los métodos

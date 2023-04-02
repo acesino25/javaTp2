@@ -1,3 +1,4 @@
+package ejercicio2;
 public class Triangulo {
     // Declaramos los atributos
     // y establecemos su visibilidad en private
