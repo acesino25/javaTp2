@@ -1,5 +1,5 @@
+package ejercicio3;
 // Declaramos la clase
-
 public class Votante{
     // declaramos dos valores privados
     // que no tendrán método modificador
