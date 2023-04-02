@@ -1,7 +1,7 @@
 # javaTp2
 List of excercises TP2 Diseño 2
 
-) Ejercicio 1
+1) Ejercicio 1 ✅✔
 Codifique una clase que dado una cadena de caracteres en minúscula permita
 la siguiente funcionalidad:
 i. Mostrar la primera mitad de los caracteres de la cadena.
@@ -12,7 +12,7 @@ v. Mostrar cada caracter de la cadena separado con un guion.
 vi. Mostrar la cantidad de vocales contenidas en la cadena de caracteres.
 
 
-2) Ejercicio 2
+2) Ejercicio 2  ✅✔
 Elaborar un programa maneje tres valores que representan los lados de un triángulo e imprima el tipo de triángulo al cual corresponde, teniendo en cuenta que de
 acuerdo a la igualdad o desigualdad de sus lados, los triángulos se clasifican en:
 Escaleno: todos sus lados son diferentes.
