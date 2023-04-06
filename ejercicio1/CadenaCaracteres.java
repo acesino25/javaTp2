@@ -12,6 +12,8 @@ public class CadenaCaracteres {
     public CadenaCaracteres(String cadena) {
         this.cadena = cadena;
     }
+
+    // MÉTODOS
     
     // i) obtenemos la mitad de la cadena
     public String obtenerPrimeraMitad() {

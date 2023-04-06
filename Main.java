@@ -22,6 +22,7 @@ public class Main{
         // # Ejercicio 2
 
         Triangulo triangulo = new Triangulo(20,10,20);
+
         triangulo.comprobarTipo();
 
     }
