@@ -47,13 +47,17 @@ la clase Película y muestre sus datos.
 
 
 6) Ejercicio 6
- Crear una clase producto, con los siguientes datos: código del producto,
-nombre del mismo, precio de costo, porcentaje de ganancia que se aplica
-sobre el precio de costo, iva del producto, para todos los casos de 21% y
-precio de venta.
- Crear los respectivos métodos accesores para cada atributo.
- Permitir mostrar la información relativa al producto.
- Permitir determinar el precio de venta, el cual se obtiene de aplicarle el iva al
+  Crear una clase producto, con los siguientes datos: 
+  ATRIBUTOS: 
+    a) código del producto,
+    b) nombre del mismo,
+    c) precio de costo, 
+    d) porcentaje de ganancia que se aplica sobre el precio de costo,
+    e) iva del producto, para todos los casos de 21% y
+    f) precio de venta.
+- Crear los respectivos métodos accesores para cada atributo.
+- Permitir mostrar la información relativa al producto.
+- Permitir determinar el precio de venta, el cual se obtiene de aplicarle el iva al
 resultado del precio de costo + precio de costo * el porcentaje de ganancia.
-El método creado no debe ser parte del protocolo de mensajes del objeto
- Indicar cuál de los 2 productos tiene el mayor precio de venta.
+- El método creado no debe ser parte del protocolo de mensajes del objeto
+- Indicar cuál de los 2 productos tiene el mayor precio de venta.
