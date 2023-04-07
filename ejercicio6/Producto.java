@@ -53,11 +53,61 @@ class Producto{
     public Producto(String codProducto, String nombre, String precioCosto, String porcentajeGanancia, String porcentajeIva, String precioVenta){
         this.codProducto = codProducto;
         this.nombre = nombre;
-        this.precioCosto = (precioCosto > 0) ? precioCosto : 
+        // el resto lo operaremos con getters y setters
+        precioCosto(precioCosto);
     }
 
     // GETTERS y SETTERS
 
-    // GETTER
-    
+    // codProducto
+    public BigDecimal getCodProducto(){
+        return this.codProducto;
+    }
+    public void setCodProducto(String codProducto){
+        this.codProducto = new BigDecimal(codProducto)
+    }
+
+    // nombre
+    public BigDecimal getNombre(){
+        return this.nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = new BigDecimal(nombre)
+    }
+
+
+    // precioCosto
+    public BigDecimal getPrecioCosto(){
+        return this.precioCosto;
+    }
+    public void setPrecioCosto(String precioCosto){
+        this.precioCosto = new BigDecimal(precioCosto)
+    }
+
+    // porcentajeGanancia
+    public BigDecimal getPorcentajeGanancia(){
+        return this.porcentajeGanancia;
+    }
+    public void setPorcentajeGanancia(String porcentajeGanancia){
+        this.porcentajeGanancia = new BigDecimal(porcentajeGanancia)
+    }
+
+    // porcentajeIva
+    public BigDecimal getPorcentajeIva(){
+        return this.porcentajeIva;
+    }
+    public void setPorcentajeIva(String porcentajeIva){
+        this.porcentajeIva = new BigDecimal(porcentajeIva)
+    }
+
+
+    // precioVenta
+    public BigDecimal getPrecioVenta(){
+        return this.precioVenta;
+    }
+    public void setPrecioVenta(String precioVenta){
+        this.precioVenta = new BigDecimal(precioVenta)
+    }
+
+
 }
