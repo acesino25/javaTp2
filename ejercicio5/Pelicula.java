@@ -1,4 +1,5 @@
 package ejercicio5;
+
 public class Pelicula {
     // Atributos
     private String titulo;
@@ -22,7 +23,7 @@ public class Pelicula {
      * TITULO
      */
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
     public void setTitulo(String titulo) {
@@ -33,7 +34,7 @@ public class Pelicula {
      * GENERO
      */
     public String getGenero() {
-        return genero;
+        return this.genero;
     }
 
     public void setGenero(String genero) {

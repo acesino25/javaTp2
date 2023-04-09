@@ -1,6 +1,9 @@
 // Importamos desde una carpeta una clase
 import ejercicio1.CadenaCaracteres;
 import ejercicio2.Triangulo;
+import ejercicio3.Votante;
+import ejercicio4.Valores;
+import ejercicio5.Pelicula;
 
 // El nombre de la clase debe coincidir con el nombre del archivo
 public class Main{
@@ -25,5 +28,42 @@ public class Main{
 
         triangulo.comprobarTipo();
 
+        System.out.println("-------------");
+        System.out.println("-------------");
+        System.out.println("Ejercicio 3:");
+        // # Ejercicio 3
+
+        // Creamos al votante
+        Votante votante = new Votante(10);
+        votante.ComprobarEdad();
+
+
+        System.out.println("-------------");
+        System.out.println("-------------");
+        System.out.println("Ejercicio 4:");
+        // # Ejercicio 4
+
+        // Creamos el objeto
+        // e iniciamos
+        Valores valores = new Valores();
+
+        System.out.println("Cantidad de Pares: " + valores.ContarPares());
+        System.out.println("Cantidad de Impares: " + valores.ContarImpares());
+        System.out.println("Suma de los pares: "+ valores.SumarPares());
+        System.out.println("Suma de los impares " + valores.SumarImpares());
+        System.out.println("Maximo Par: " + valores.MaximoPar());
+        System.out.println("Maximo Impar: " + valores.MaximoImpar());
+        System.out.println("Minimo Par: " + valores.MinimoPar());
+        System.out.println("Mínimo Impar: " + valores.MinimoImpar());
+
+
+        System.out.println("-------------");
+        System.out.println("-------------");
+        System.out.println("Ejercicio 5:");
+        // # Ejercicio 5
+
+        Pelicula pelicula = new Pelicula("Jhon Wick 4", "Accion", 169, "PM18", "Chad Stahelski");
+
+        pelicula.mostrarDatos();
     }
 }

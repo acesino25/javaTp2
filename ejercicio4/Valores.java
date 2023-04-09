@@ -14,11 +14,11 @@ public class Valores{
 
     // Los métodos deben realizar una única función
     public int ContarPares(){
-        int contador;
+        int contador = 0;
 
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 == 0){
-                contador++
+                contador++;
             }
         }
 
@@ -26,11 +26,11 @@ public class Valores{
     }
     // Retorna cantidad de impares
     public int ContarImpares(){
-        int contador;
+        int contador = 0;
 
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 != 0){
-                contador++
+                contador++;
             }
         }
 
@@ -39,11 +39,11 @@ public class Valores{
 
     // Sumar Pares
     public int SumarPares(){
-        int resultado;
+        int resultado = 0;
 
         for(int i = 0; i < numeros.length; i++){
             if(this.numeros[i] % 2 == 0){
-                resultado += numeros[i]
+                resultado += numeros[i];
             }
         }
 
@@ -52,18 +52,16 @@ public class Valores{
 
     // Sumar Impares
     public int SumarImpares(){
-        int resultado;
+        int resultado = 0;
 
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 != 0){
-                resultado += numeros[i]
+                resultado += numeros[i];
             }
         }
 
         return resultado;
     }
-
-    // MÁXIMO MÍNIMO
 
     // Obtener Máximo impar
     public int MaximoImpar(){
@@ -72,7 +70,7 @@ public class Valores{
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 != 0){
                 if(this.numeros[i] > maximo){
-                    maximo = this.numeros[i]
+                    maximo = this.numeros[i];
                 }
             }
         }
@@ -87,7 +85,7 @@ public class Valores{
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 != 0){
                 if(this.numeros[i] < minimo){
-                    minimo = this.numeros[i]
+                    minimo = this.numeros[i];
                 }
             }
         }
@@ -104,7 +102,7 @@ public class Valores{
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 == 0){
                 if(this.numeros[i] > maximo){
-                    maximo = this.numeros[i]
+                    maximo = this.numeros[i];
                 }
             }
         }
@@ -119,7 +117,7 @@ public class Valores{
         for(int i = 0; i < this.numeros.length; i++){
             if(this.numeros[i] % 2 == 0){
                 if(this.numeros[i] < minimo){
-                    minimo = this.numeros[i]
+                    minimo = this.numeros[i];
                 }
             }
         }

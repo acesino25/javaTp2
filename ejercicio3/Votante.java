@@ -11,15 +11,18 @@ public class Votante{
     // Declaramos el constructor
 
     public Votante(int edad){
+        /*if(edad < EDADMINIMA || edad > EDADMAXIMA){
+            return System.out.println("Los valores ingresadosno se corresponden con un votante habilitado")
+        }*/
         this.edad = edad;
     }
 
     // Declaramos un getter para devolver condicionalmente una respuesta
     public void ComprobarEdad(){
         if(this.edad > EDADMINIMA && this.edad < EDADMAXIMA){
-            System.out.println("Votante habilitado")
+            System.out.println("Votante habilitado");
         }else{
-            System.out.println("Votante inhabilitado")
+            System.out.println("Votante inhabilitado");
         }
     }
 
