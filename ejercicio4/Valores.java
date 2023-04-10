@@ -80,10 +80,10 @@ public class Valores{
 
     // Obtener Minimo impar
     public int MinimoImpar(){
-        int minimo = 0;
+        int minimo = 1;
 
         for(int i = 0; i < this.numeros.length; i++){
-            if(this.numeros[i] % 2 != 0){
+            if(this.numeros[i] % 2 != 0){ // ES IMPAR
                 if(this.numeros[i] < minimo){
                     minimo = this.numeros[i];
                 }

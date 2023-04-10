@@ -54,7 +54,7 @@ public class Main{
         System.out.println("Maximo Par: " + valores.MaximoPar());
         System.out.println("Maximo Impar: " + valores.MaximoImpar());
         System.out.println("Minimo Par: " + valores.MinimoPar());
-        System.out.println("Mínimo Impar: " + valores.MinimoImpar());
+        System.out.println("Minimo Impar: " + valores.MinimoImpar());
 
 
         System.out.println("-------------");
