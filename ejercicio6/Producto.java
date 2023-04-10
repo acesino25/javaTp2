@@ -1,3 +1,4 @@
+package ejercicio6;
 /**
  * EL BUG DEL PUNTO FLOTANTE:
  * Este problema se debe a la forma en que los números
@@ -33,8 +34,9 @@ BIG DECIMAL NECESITA UN STRING: //NOTA: PARECE QUE PUEDE USAR un INT (Pero traba
  */
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
-class Producto{
+public class Producto{
 
     // Atributos
     // Cod y Nombre
@@ -42,7 +44,7 @@ class Producto{
     private String nombre;
     // Precio
     private BigDecimal precioCosto;
-    private BigDecimal porcentajeGanancia;
+    private String porcentajeGanancia;
     private BigDecimal porcentajeIva;
     private BigDecimal precioVenta;
 
@@ -64,11 +66,20 @@ class Producto{
         setPorcentajeGanancia(porcentajeGanancia);
         setPorcentajeIva(porcentajeIva);
         // Obtenido de la suma del precio de costo + el porcentaje de ganancia
-        setPrecioVenta()
+        setPrecioVenta("");
 
         // Guardamos el objeto con mayor valor de precio
-        if(this.getPrecioVenta > mayor.precioVenta || mayor == null){
+        if(mayor == null){
             mayor = this;
+        }else{
+            // CompareTo es el método nativo de BigDecimal
+            // para comparar dos BigDecimals
+            // si el primero es mayor al segundo será mayor a 0
+            // si el segundo es mayor será menor a 0
+            // si son iguales será 0
+            if(this.getPrecioVenta().compareTo(mayor.getPrecioVenta()) > 0){
+                mayor = this;
+            }
         }
         
     }
@@ -102,23 +113,14 @@ class Producto{
 
     // porcentajeGanancia
     // GET
-    public BigDecimal getPorcentajeGanancia(){
+    public String getPorcentajeGanancia(){
         return this.porcentajeGanancia;
     }
     // SET
     public void setPorcentajeGanancia(String porcentajeGanancia){
         if(porcentajeGanancia != "" || porcentajeGanancia != null){
-            this.porcentajeGanancia = new BigDecimal(porcentajeGanancia);
-        }else{
             
-            // En esta parte vamos a DIVIDIR POR 100 el BIG DECIMAL
-            // Declaramos las variables
-            BigDecimal porcentajeGananciaDividir = new BigDecimal(porcentajeGanancia);
-            BigDecimal divisor = new BigDecimal('100');
-
-            // Dividimos y
-            // Asignamos 
-            this.porcentajeGanancia = BigDecimal resultado = porcentajeGananciaDividir.divide(divisor, RoundingMode.DOWN);
+            this.porcentajeGanancia = porcentajeGanancia;
 
         }
         
@@ -129,6 +131,11 @@ class Producto{
         return this.porcentajeIva;
     }
     public void setPorcentajeIva(String porcentajeIva){
+        if(porcentajeIva == ""){
+            this.porcentajeIva = new BigDecimal("21");
+            return;
+        }
+
         this.porcentajeIva = new BigDecimal(porcentajeIva);
     }
 
@@ -140,8 +147,19 @@ class Producto{
     public void setPrecioVenta(String precioVenta){
         
         if(precioVenta == "" || precioVenta == null){
+
+            // En esta parte vamos a DIVIDIR POR 100 el BIG DECIMAL
+            // Declaramos las variables
+            BigDecimal porcentajeGananciaDividir = new BigDecimal(porcentajeGanancia);
+            BigDecimal divisor = new BigDecimal("100");
+
+            // Dividimos y
+            // Asignamos 
+            BigDecimal resultado = porcentajeGananciaDividir.divide(divisor, RoundingMode.DOWN);
+            
+
             // El uso del método 'add' no muta el valor original
-            this.precioVenta = this.precioCosto.add(this.porcentajeGanancia);
+            this.precioVenta = this.precioCosto.add(this.precioCosto.multiply(resultado));
         }else{
             // Si queremos sobre escribir el valor por cualquier cosa lo hacemos.
             // NO sería lo recomendable. Después consultaríamos con el cliente

@@ -4,6 +4,7 @@ import ejercicio2.Triangulo;
 import ejercicio3.Votante;
 import ejercicio4.Valores;
 import ejercicio5.Pelicula;
+import ejercicio6.Producto;
 
 // El nombre de la clase debe coincidir con el nombre del archivo
 public class Main{
@@ -65,5 +66,18 @@ public class Main{
         Pelicula pelicula = new Pelicula("Jhon Wick 4", "Accion", 169, "PM18", "Chad Stahelski");
 
         pelicula.mostrarDatos();
+
+        System.out.println("-------------");
+        System.out.println("-------------");
+        System.out.println("Ejercicio 6:");
+        // # Ejercicio 6
+
+        Producto producto = new Producto("#11H2C", "Huevo de pascuas dos corazones", "1000", "100", "21", " ");
+        System.out.println("Producto: " + producto.getCodProducto());
+        System.out.println("Nombre: " + producto.getNombre());
+        System.out.println("Precio Compra: " + producto.getPrecioCosto());
+        System.out.println("Precio Venta: " + producto.getPrecioVenta());
+        System.out.println("Porcentaje Ganancia: " + producto.getPorcentajeGanancia());
+        System.out.println("Porcentaje Iva: " + producto.getPorcentajeIva());
     }
 }
