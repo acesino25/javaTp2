@@ -46,7 +46,7 @@ mostrar sus valores. Además, defina otra clase que permita instanciar 2 objetos
 la clase Película y muestre sus datos.
 
 
-6) Ejercicio 6
+6) Ejercicio 6  ✅✔
   Crear una clase producto, con los siguientes datos: 
   ATRIBUTOS: 
     a) código del producto,
