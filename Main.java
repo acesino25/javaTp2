@@ -79,5 +79,9 @@ public class Main{
         System.out.println("Precio Venta: " + producto.getPrecioVenta());
         System.out.println("Porcentaje Ganancia: " + producto.getPorcentajeGanancia());
         System.out.println("Porcentaje Iva: " + producto.getPorcentajeIva());
+
+        // Esta función nos permite obtener el mayor de todos los objetos 
+        // creados con la clase
+        System.out.println("El mayor de todos los productos es: " + producto.getMayor().getNombre());
     }
 }

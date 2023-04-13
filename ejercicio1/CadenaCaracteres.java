@@ -1,4 +1,5 @@
-package ejercicio1;
+// Habilitar si queres usarlo con el Main fuera de la carpeta
+// package ejercicio1;
 // Lo de arriba debe coincidir con la paquetería de la carpeta
 
 // Debe coincidir con el nombre del archivo

@@ -1,4 +1,5 @@
-package ejercicio4;
+// Habilitar si queres usarlo con el Main fuera de la carpeta
+//package ejercicio4;
 // Declaramos la clase
 public class Valores{
     // Declaramos los atributos

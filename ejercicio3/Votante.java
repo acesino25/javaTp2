@@ -1,4 +1,5 @@
-package ejercicio3;
+// Habilitar si queres usarlo con el Main fuera de la carpeta
+//package ejercicio3;
 // Declaramos la clase
 public class Votante{
     // declaramos dos valores privados

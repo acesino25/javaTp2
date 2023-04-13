@@ -1,4 +1,5 @@
-package ejercicio6;
+// Habilitar si queres usarlo con el Main fuera de la carpeta
+// package ejercicio6;
 /**
  * EL BUG DEL PUNTO FLOTANTE:
  * Este problema se debe a la forma en que los números
@@ -85,6 +86,12 @@ public class Producto{
     }
 
     // GETTERS y SETTERS
+
+
+    // Obtener el mayor
+    public Producto getMayor(){
+        return mayor;
+    }
 
     // codProducto
     public String getCodProducto(){

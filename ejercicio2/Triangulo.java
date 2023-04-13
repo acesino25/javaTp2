@@ -1,4 +1,5 @@
-package ejercicio2;
+// Habilitar si queres usarlo con el Main fuera de la carpeta
+//package ejercicio2;
 public class Triangulo {
     // Declaramos los atributos
     // y establecemos su visibilidad en private

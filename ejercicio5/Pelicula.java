@@ -1,4 +1,5 @@
-package ejercicio5;
+// Habilitar si queres usarlo con el Main fuera de la carpeta
+//package ejercicio5;
 
 public class Pelicula {
     // Atributos
